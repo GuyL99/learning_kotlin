@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.GuyL.strartup.MainActivity">
+
+    <EditText
+        android:id="@+id/DOBTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Enter your DOB"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:text="Your age shows here"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.227"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="328dp"
+        tools:ignore="UnknownId"
+        android:layout_marginLeft="4dp" />
+
+    <Button
+        android:id="@+id/FindAgeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:onClick="findAge"
+        android:text="GET AGE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+</android.support.constraint.ConstraintLayout>
